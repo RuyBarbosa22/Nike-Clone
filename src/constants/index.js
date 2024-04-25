@@ -24,32 +24,37 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Modelos' },
-    { value: '500+', label: 'Lojas' },
-    { value: '250k+', label: 'Clientes' },
+    { value: '400+', label: 'Lojas disponíveis' },
+    { value: '50k+', label: 'Reviews' },
+    { value: '450k+', label: 'Vendas' },
 ];
 
 export const products = [
     {
         imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        name: "Nike P-6000",
+        price: "R$799,90",
     },
     {
         imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        name: "Nike Air Max 95",
+        price: "R$1149,49",
     },
     {
         imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        name: "Nike Zoom Vomero 5",
+        price: "R$1299,99",
     },
     {
         imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        name: "Nike Air Max Plus OG",
+        price: "R$1299,99",
     },
+    {
+        imgURL: shoe8,
+        name: "Nike Dunk Retro SE",
+        price: "R$999,99",
+    }
 ];
 
 export const services = [
