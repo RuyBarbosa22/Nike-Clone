@@ -14,8 +14,8 @@ const Hero = () => {
       id='home'
       className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'
     >
-      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-0'>
-        <p className='text-2xl font-montserrat text-coral-red'>
+      <div className='relative xl:w-2/5 flex flex-col justify-center items-start w-full  max-xl:padding-x pt-20'>
+        <p className='text-2xl font-semibold font-montserrat text-[#ea553b]'>
           Novos lançamentos
         </p>
 
@@ -24,7 +24,7 @@ const Hero = () => {
             Descubra o novo 
           </span>
           <br />
-          <span className='text-coral-red inline-block mt-3'>Air Max</span> DN
+          <span className='text-[#ea553b] inline-block mt-3'>Air Max</span> DN
         </h1>
         <p className='font-montserrat text-slate-gray text-nowrap text-lg leading-8 mt-6 mb-14 sm:max-w-sm'>
           A próxima geração da tecnologia Air está aqui.
@@ -48,10 +48,10 @@ const Hero = () => {
         <img
           src={bigShoeImg}
           alt='shoe colletion'
-          className='object-contain relative z-10 xl:ml-40 lg:h-[600px]'
+          className='object-contain relative z-10 xl:ml-40 md:h-[400px] lg:h-[500px]'
         />
 
-        <div className='flex sm:gap-6 gap-4 absolute -bottom-[8%] sm:left-[35%] max-sm:px-6'>
+        <div className='flex sm:gap-6 gap-4 absolute -bottom-[14%] sm:left-[24%] max-sm:px-6'>
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard

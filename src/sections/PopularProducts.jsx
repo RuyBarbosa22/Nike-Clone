@@ -6,9 +6,9 @@ const PopularProducts = () => {
     <section id="products" className='max-container max-sm:mt-12'>
       <div className='flex flex-col justify-start gap-5'>
         <h2 className='text-4xl font-palanquin font-bold'>Lançamentos 
-         <span className='text-coral-red'> Air Max</span></h2>
-        <p className='lg:max-w-lg mt-2 font-montserrat text-slate-gray text-justify'>Os tênis Nike Air Max são famosos por sua tecnologia de amortecimento de ar visível desde 1987,
-           oferecendo conforto e estilo em uma variedade de modelos.</p>
+         <span className='text-coral-red'> Disponíveis</span></h2>
+        <p className='lg:max-w-[50%] mt-2 font-montserrat text-slate-gray text-justify'>Explore a fusão ideal de desempenho, estilo e conforto com a linha de tênis premium Nike. Encontre o equilíbrio perfeito entre tecnologia avançada e design inovador, proporcionando uma experiência única a cada passo.
+        </p>
       </div>
 
       <div className='mt-16 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 gap-16'>

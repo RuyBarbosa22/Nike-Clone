@@ -9,7 +9,7 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
       <div
         className={`border-2 rounded-xl ${
           bigShoeImg === imgURL.bigShoe
-            ? "border-coral-red"
+            ? "shadow-2xl"
             : "border-transparent"
         } cursor-pointer max-sm:flex-1`}
         onClick={handleClick}
