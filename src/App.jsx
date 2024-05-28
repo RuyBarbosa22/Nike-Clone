@@ -1,8 +1,20 @@
 import { Hero, PopularProducts, SuperQuality, Services, SpecialOffer, CustomerReviews, Subscribe, Footer } from "./sections";
-
 import Nav from "./components/Nav";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+
+
 
 const App =() => {
+
+ useEffect(() => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+      AOS.init({ duration: 1000 });
+    }
+  }, []);
+
   return (
     <main className="relative">
         <Nav /> 
@@ -21,7 +33,7 @@ const App =() => {
       <section className="padding">
         <SpecialOffer />
       </section>
-      <section className="padding bg-pale-blue padding">
+      <section className="padding">
         <CustomerReviews />
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">

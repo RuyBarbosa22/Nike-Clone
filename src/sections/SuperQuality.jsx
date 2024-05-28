@@ -22,8 +22,8 @@ const SuperQuality = () => {
           <Button label='Conferir' />
         </div>
       </div>
-      <div className="flex-1 flex justify-center items-center">
-        <Carousel slides={slides} autoSlide={false} />
+      <div className="flex-1 flex justify-center items-center xl:ml-[28%]">
+        <Carousel slides={slides} autoSlide={true} />
       </div>
     </section>
   )

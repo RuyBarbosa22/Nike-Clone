@@ -56,3 +56,17 @@
     @apply font-montserrat text-slate-gray text-lg leading-7;
   }
 }
+
+/* styles.css */
+@keyframes move-icon {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.animate-move-icon {
+  animation: move-icon 2s infinite;
+}

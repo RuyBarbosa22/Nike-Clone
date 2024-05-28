@@ -3,7 +3,7 @@ import  PopularProductCard  from '../components/PopularProductCard'
 
 const PopularProducts = () => {
   return (
-    <section id="products" className='max-container max-sm:mt-12'>
+    <section id="products" className='max-container max-sm:mt-12 mt-24'>
       <div className='flex flex-col justify-start gap-5'>
         <h2 className='text-4xl font-palanquin font-bold'>Lançamentos 
          <span className='text-coral-red'> Disponíveis</span></h2>
@@ -11,7 +11,7 @@ const PopularProducts = () => {
         </p>
       </div>
 
-      <div className='mt-16 grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 gap-16'>
+      <div className='mt-8 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 gap-16'>
         {products.map ((product) => (
           <PopularProductCard key=
           {product.name} {...product} />

@@ -33,11 +33,6 @@ export const products = [
         price: "R$799,90",
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Max 95",
-        price: "R$1149,49",
-    },
-    {
         imgURL: shoe6,
         name: "Nike Zoom Vomero 5",
         price: "R$1299,99",
@@ -57,33 +52,33 @@ export const products = [
 export const services = [
     {
         imgURL: truckFast,
-        label: "Free shipping",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+        label: "Frete grátis",
+        subtext: "Compre seus tênis favoritos e receba em casa sem custo extra!"
     },
     {
         imgURL: shieldTick,
-        label: "Secure Payment",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        label: "Pagamento seguro",
+        subtext: "Suas compras protegidas com total segurança. Pague com confiança!"
     },
     {
         imgURL: support,
-        label: "Love to help you",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Suporte ao cliente",
+        subtext: "Estamos disponíveis 24 horas por dia para ajudar você com qualquer dúvida ou problema."
     },
 ];
 
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'Morich Brown',
+        customerName: 'David Almeida',
         rating: 4.5,
-        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+        feedback: "Perfeito para longas corridas. Amortecimento excelente e muito confortável. Design moderno. Adorei!"
     },
     {
         imgURL: customer2,
-        customerName: 'Lota Mongeskar',
-        rating: 4.5,
-        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+        customerName: 'Aliria Fernandes',
+        rating: 4.9,
+        feedback: "Super confortável e estiloso. A tecnologia Air Max faz toda a diferença. Recomendo!"
     }
 ];
 
