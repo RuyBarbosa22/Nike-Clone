@@ -4,7 +4,7 @@ import ReviewCard from "../components/ReviewCard"
 const CustomerReviews = () => {
   return (
     <section className="max-container">
-      <h3 className="font-palaquin text-center text-4xl font-bold">
+      <h3 className="font-palaquin text-center text-4xl font-bold max-sm:mt-16">
         O que nossos 
         <span className="text-[#ea553b]"> clientes </span>
         dizem?

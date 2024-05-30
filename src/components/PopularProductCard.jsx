@@ -14,8 +14,8 @@ const PopularProductCard = ({ imgURL, name, price }) => {
 
   return (
     <div
-      className={`flex flex-1 flex-col w-auto max-sm:w-full transition-transform rounded-xl p-4 mt-12 ${
-        isHovered ? "transform hover:translate-y-[-5px] shadow-xl" : ""
+      className={`flex flex-1 flex-col w-auto max-sm:w-full transition-transform rounded-xl p-4 mt-12 max-sm:mt-0 max-sm:shadow-xl ${
+        isHovered ? "md:transform md:hover:translate-y-[-5px] shadow-xl" : ""
       }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
