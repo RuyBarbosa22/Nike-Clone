@@ -7,10 +7,7 @@ import "aos/dist/aos.css";
 const Services = () => {
 
   useEffect(() => {
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-    if (!isMobile) {
-      AOS.init({ duration: 2000 });
-    }
+    AOS.init({ duration: 2000, disable: 'mobile' });
   }, []);
 
   return (
@@ -20,8 +17,8 @@ const Services = () => {
           key={service.label}
           dataAos={
             index === 0 ? "fade-up-right" :
-            index === 1 ? "fade-up" :
-            index === 2 ? "fade-up-left" : ""
+              index === 1 ? "fade-up" :
+                index === 2 ? "fade-up-left" : ""
           }
           {...service}
         />

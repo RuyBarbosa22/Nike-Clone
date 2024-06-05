@@ -16,7 +16,7 @@ const App =() => {
   }, []);
 
   return (
-    <main className="relative">
+    <main className="relative overflow-x-hidden">
         <Nav /> 
       <section className="xl:padding-l wide:padding-r sm:padding-b">
         <Hero />

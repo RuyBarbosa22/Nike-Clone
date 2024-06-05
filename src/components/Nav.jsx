@@ -19,6 +19,22 @@ const Nav = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLinkClick = (href) => {
+    // Fecha o menu
+    setMenuOpen(false);
+
+    // Remove a classe overflow-hidden do body
+    document.body.classList.remove('overflow-hidden');
+
+    // Atraso para garantir que o menu esteja fechado antes da rolagem
+    setTimeout(() => {
+      const section = document.querySelector(href);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 300); // Ajuste este valor conforme necessário para garantir uma rolagem suave
+  };
+
   return (
     <header className="padding-x py-8 absolute z-30 w-full bg-white">
       <nav className="flex justify-between items-center max-container">
@@ -64,7 +80,9 @@ const Nav = () => {
               <a 
                 key={item.label} 
                 href={item.href}
-                className="font-montserrat text-2xl text-slate-gray hover:text-[#ea553b] transition-transform duration-300 ease-in-out">
+                className="font-montserrat text-2xl text-slate-gray hover:text-[#ea553b] transition-transform duration-300 ease-in-out"
+                onClick={() => handleLinkClick(item.href)}
+              >
                 {item.label}
               </a>
             ))}
