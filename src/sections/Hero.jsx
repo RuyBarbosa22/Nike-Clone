@@ -44,10 +44,10 @@ const Hero = () => {
         <img
           src={bigShoeImg}
           alt="shoe colletion"
-          className="object-contain relative xl:ml-40 max-sm:h-[300px] sm:h-[380px] md:h-[480px] lg:h-[500px] xl:h-[520px] 2xl:h-[620px] xl:mt-20 xl:mr-0"
+          className="object-contain relative xl:ml-40 max-sm:h-[300px] sm:h-[280px] md:h-[320px] lg:h-[380px] xl:h-[520px] 2xl:h-[620px] xl:mt-20 xl:pr-24 2xl:pr-4"
         />
 
-        <div className="flex gap-4 sm:absolute max-sm:grid max-sm:grid-cols-2 max-md:grid-cols-3 max-md:top-[100%] max-lg:top-[100%] max-xl:top-[100%] -bottom-[14%] xl:left-[30%] 2xl:left-[36%] pt-24">
+        <div className="flex gap-4 sm:absolute max-sm:grid max-sm:grid-cols-2 max-md:grid-cols-3 max-md:top-[100%] max-lg:top-[100%] max-xl:top-[100%] -bottom-[14%] xl:left-[37%] 2xl:left-[50%] pt-24">
           {shoes.map((image, index) => (
             <div key={index}>
               <ShoeCard

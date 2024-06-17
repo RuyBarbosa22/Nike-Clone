@@ -9,7 +9,7 @@ const PopularProducts = () => {
 
   return (
     <section id="products" className="max-container max-sm:mt-12 mt-24 padding-y">
-      <div className={`flex flex-col justify-start gap-5 ${isMobile ? 'padding-no-x-mobile max-sm:text-justify' : 'padding-x padding-t'}`}>
+      <div className={`flex flex-col justify-start gap-5 ${isMobile ? 'padding-no-x-mobile max-sm:text-justify' : 'max-2xl:padding-x'}`}>
         <h2 className="text-4xl font-palanquin font-bold text-center sm:text-center md:text-left">
           Lançamentos
           <span className="text-coral-red"> Disponíveis</span>
@@ -30,7 +30,7 @@ const PopularProducts = () => {
           <div className="flex-shrink-0" style={{ width: '2%' }}></div>
         </div>
       ) : (
-        <div className="mt-8 grid lg:grid-cols-4 md:grid-cols-3 gap-4 md:padding-x">
+        <div className="mt-8 grid lg:grid-cols-4 md:grid-cols-3 gap-4 md:max-2xl:padding-x">
           {products.map((product) => (
             <PopularProductCard key={product.name} {...product} />
           ))}
