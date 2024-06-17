@@ -70,13 +70,13 @@ export const services = [
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'David Almeida',
+        customerName: 'João Silva',
         rating: 4.5,
         feedback: "Perfeito para longas corridas. Amortecimento excelente e muito confortável. Design moderno. Adorei!"
     },
     {
         imgURL: customer2,
-        customerName: 'Aliria Fernandes',
+        customerName: 'Eduarda Freitas',
         rating: 4.9,
         feedback: "Super confortável e estiloso. A tecnologia Air Max faz toda a diferença. Recomendo!"
     }

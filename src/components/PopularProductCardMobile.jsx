@@ -1,8 +1,10 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { star } from "../assets/icons";
+import { useMediaQuery } from 'react-responsive';
 
-const PopularProductCard = ({ imgURL, name, price }) => {
+const PopularProductCardMobile = ({ imgURL, name, price }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 475 });
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -14,16 +16,17 @@ const PopularProductCard = ({ imgURL, name, price }) => {
 
   return (
     <div
-      className={`flex flex-1 flex-col w-auto max-sm:w-full max-md:w-full transition-transform rounded-xl p-4 mt-12 max-sm:mt-0
-        shadow-xl ${isHovered ? "md:shadow-2xl md:-translate-y-1" : "md:shadow-none"} 
-        md:hover:translate-y-[-5px] md:hover:shadow-2xl`}
+      className={`flex flex-1 flex-col w-auto transition-transform rounded-xl p-4 mt-6 mb-6 
+        shadow-xl ${isHovered ? "shadow-2xl -translate-y-1" : "shadow-none"} 
+        hover:translate-y-[-5px] hover:shadow-2xl`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      style={{ minWidth: isMobile ? '70%' : '40%' }} // Corrigindo a interpolação do estilo
     >
       <img src={imgURL} alt={name} className="w-full" />
       <div className="mt-8 flex justify-start gap-2.5">
         <img src={star} alt="rating" width={24} height={24} />
-        <p className="font-montserrat text-xl max-md leading-normal text-slate-gray">
+        <p className="font-montserrat text-xl leading-normal text-slate-gray">
           {4.8}
         </p>
       </div>
@@ -37,4 +40,4 @@ const PopularProductCard = ({ imgURL, name, price }) => {
   );
 };
 
-export default PopularProductCard;
+export default PopularProductCardMobile;

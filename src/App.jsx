@@ -4,8 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from 'react';
 
-
-
 const App =() => {
 
  useEffect(() => {
@@ -21,7 +19,7 @@ const App =() => {
       <section className="xl:padding-l wide:padding-r sm:padding-b">
         <Hero />
       </section>
-      <section className="padding">
+      <section>
         <PopularProducts />
       </section>
       <section className="padding">
