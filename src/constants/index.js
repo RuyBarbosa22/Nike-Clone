@@ -85,7 +85,7 @@ export const reviews = [
 
 export const footerLinks = [
     {
-        title: "Products",
+        title: "Produtos",
         links: [
             { name: "Air Force 1", link: "/" },
             { name: "Air Max 1", link: "/" },
@@ -96,20 +96,20 @@ export const footerLinks = [
         ],
     },
     {
-        title: "Help",
+        title: "Ajuda",
         links: [
-            { name: "About us", link: "/" },
+            { name: "sobre nós", link: "/" },
             { name: "FAQs", link: "/" },
-            { name: "How it works", link: "/" },
-            { name: "Privacy policy", link: "/" },
-            { name: "Payment policy", link: "/" },
+            { name: "Como funciona", link: "/" },
+            { name: "Politica de privacidade", link: "/" },
+            { name: "Politica de pagamento", link: "/" },
         ],
     },
     {
-        title: "Get in touch",
+        title: "Fale comigo",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "ruybarbao@gmail.com", link: "mailto:ruybarbao@gmail.com" },
+            { name: "(11) 946706513", link: "https://wa.me/5511946706513"},
         ],
     },
 ];

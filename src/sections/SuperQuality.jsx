@@ -23,7 +23,7 @@ const SuperQuality = () => {
         </div>
       </div>
       <div className="flex-1 flex justify-center items-center xl:ml-[28%] max-sm:w-[98%]">
-        <Carousel slides={slides} autoSlide={true} />
+        <Carousel slides={slides} autoSlide={false} />
       </div>
     </section>
   )

@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "../assets/icons";
 export default function Carousel({
     slides,
     autoSlide = false,
-    autoSlideInterval = 3000,
+    autoSlideInterval = 5000,
 }) {
     const [curr, setCurr] = useState(0)
 
@@ -37,15 +37,15 @@ export default function Carousel({
             <div className="absolute inset-0 flex items-center justify-between p-5 py-40 z-10 shadow-xl">
                 <button
                     onClick={prev}
-                    className="p-1 rounded-full bg-[#ea553b] shadow" 
+                    className="p-1 rounded-full bg-[#ea553b] shadow max-sm:mb-20" 
                 >
-                    <img src={ChevronLeft} alt="prev"/>
+                    <img src={ChevronLeft} alt="prev" className="max-sm:h-10"/>
                 </button>
                 <button
                     onClick={next}
-                    className="p-1 rounded-full color-black bg-[#ea553b] shadow"
+                    className="p-1 rounded-full color-black bg-[#ea553b] shadow max-sm:mb-20"
                 >
-                    <img src={ChevronRight} alt="prox"/>
+                    <img src={ChevronRight} alt="prox" className="max-sm:h-10"/>
                 </button>
             </div>
             <div className="absolute bottom-0 left-0 right-0 flex items-center justify-center gap-4 mb-10">

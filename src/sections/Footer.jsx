@@ -53,7 +53,7 @@ const Footer = () => {
             height={20}
             className="rounded-full m-0"
             />
-            <p>2023 Nike. Todos direitos reservados.</p>
+            <p>Ruy 2024. Projeto clone para portifólio pessoal.</p>
         </div>
         <p className="font-montserrat cursor-pointer">Termos & Condições</p>
       </div>
